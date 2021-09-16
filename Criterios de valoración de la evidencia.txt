@@ -1,0 +1,19 @@
+*************************************************************************
+**                         Ciclo 3 - MisiónTic                         **
+*************************************************************************
+
+Integrante: Camilo Andres Vargas Sogamoso
+Documento de identidad: 86.085.673
+Correo electrónico: nimbryxion@gmail.com
+Ciudad: Villavicencio
+
+Grupo: 8
+Nombre grupo:GrupoDesarrolloT
+Nombre proyecto:ProyectoT
+Rol: Scrum Master
+
+Se propone analizar, diseñar y construir una aplicación software que permita 
+controlar las ventas físicas y virtuales de una empresa de manufactura y hacerles 
+el correspondiente seguimiento. Para ello, aplicara la modalidad ABP y metodología SCRUM,
+la cual está conformado por 5 tripulantes y se desarrollara en 8 semanas.
+© 2021 GitHub, Inc.
