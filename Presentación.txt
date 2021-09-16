@@ -1,0 +1,18 @@
+*************************************************************************
+**                         Ciclo 3 - MisiónTic                         **
+*************************************************************************
+
+Integrante: Milton Julián Pulido	
+Documento de identidad: 80.736.333
+Correo electrónico: j.pulido.milton@gmail.com
+Ciudad: Soacha/ Cundinamrca.
+
+Grupo: 8
+Nombre grupo:GrupoT Ciclo3
+Nombre proyecto:ProyectoT
+Rol: Analista
+
+Se propone analizar, diseñar y construir una aplicación software que permita 
+controlar las ventas físicas y virtuales de una empresa de manufactura y hacerles 
+el correspondiente seguimiento. Para ello, aplicara la modalidad ABP y metodología SCRUM,
+la cual está conformado por 5 tripulantes y se desarrollara en 8 semanas.
