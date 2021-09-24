@@ -20,19 +20,16 @@ background-attachment: fixed;
     bottom: -30px;
 }
 .formulario {
-    /* background: rgba(141, 27, 27, 0); */
-    /* padding: 3px; */
-    /* margin-top: 150px; */
-    
+    background: rgba(141, 27, 27, 0); 
+    padding: 3px; 
+    margin-top: 150px;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
-    border: 5px solid #66666600;
+    border: 5px solid #a02b2b00;
     width: 500px;
     margin-block-start: 1%;  
     background-color: rgba(213, 228, 224, 0); 
-    
-    
 }
 h1 {
     text-align: center;
@@ -48,12 +45,11 @@ input[type="password"]{
      padding: 10px;
      border: none;
      background-color: rgba(255, 255, 255, 0.938);
-     
-
+    
 }
 .input-contenedor{
     margin-bottom: 10px;
-    border: 2px solid rgba(255, 0, 0, 0); 
+    border: 2px solid rgba(211, 28, 28, 0); 
 }
 .icon{
     min-width: 30px;
@@ -75,8 +71,6 @@ input[type="password"]{
 .button:hover{
     background: cadetblue;
     text-align:center;
-    
-
 }
 p{
  text-align:center;
