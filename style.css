@@ -1,7 +1,7 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
-background: url(images/Futurism\ Background\ 3.jpg);
+background: url(images/Caqui\ Art\ Déco\ Experimental\ Moda\ Sitio\ Web\ \(3\).png);
 background-size: cover;
 background-attachment: fixed;
 }
@@ -11,25 +11,32 @@ background-attachment: fixed;
 .contenedor {
     width: 500px;
     padding: 5px;
-    margin-block-start: 1%;
+    margin-block-start: 0%;
     position: relative;
-    bottom: 100px;
+    bottom: 20px;
     overflow-y: hidden; 
 }
-.logo{
-    position: relative;
-    bottom: -30px;
+  .logo{ 
+    height: auto;
+    width: auto;
+    max-height: 10 px;
+    max-width: 10 px; 
 }
+ 
+.foto1 {
+    height: auto;
+    width: auto;
+   
+ } 
 .formulario {
     background: rgba(141, 27, 27, 0); 
     padding: 3px; 
-    margin-top: 150px;
+    margin-top: 100px;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
     border: 5px solid #a02b2b00;
     width: 500px;
-    margin-block-start: 1%;  
     background-color: rgba(213, 228, 224, 0); 
 }
 h1 {
