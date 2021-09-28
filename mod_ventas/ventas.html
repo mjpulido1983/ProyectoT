@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Moda T</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta charset="UTF-8">
+  <title>Moda T</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     
+  <link rel="shortcut icon" href="assets/img/favicon.png">
 </head>
-<body>
+
+<body background="assets/img/back2.jpeg">
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #6abffc;">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>      
+      </button>
       <div class="collapse navbar-collapse">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
@@ -26,6 +31,82 @@
     </div>
   </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <div class="container">
+    <div class="mt-5">
+      <div class="row">
+        <nav class="navbar navbar-light" style="background-color: #c1e5ff;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="https://descargar.org/wp-content/uploads/2020/03/plantill-factura-azul-excel-icono.png" alt=""
+                width="30" height="24" class="d-inline-block align-text-top">
+              Nueva Factura
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mt-2">
+        <div class="row">
+          <form class="row g-3">
+            <div class="col-md-3">
+              <label for="inputCedula" class="form-label">No. Documento</label>
+              <input type="text" class="form-control" id="inputCedula">
+            </div>
+            <div class="col-md-3">
+              <label for="inputCliente" class="form-label">Cliente</label>
+              <input type="text" class="form-control" id="inputCliente">
+            </div>
+            <div class="col-md-3">
+              <label for="inputDierccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputDierccion" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-3">
+              <label for="inputTelefono" class="form-label">No. Contacto</label>
+              <input type="text" class="form-control" id="inputTelefono">
+            </div>
+            <div class="col-md-3">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-3">
+              <label for="inputVendedor" class="form-label">Vendedor</label>
+              <select id="inputVendedor" class="form-select">
+                <option selected>Seleccione...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="inputVendedor" class="form-label">Modalidad Pago</label>
+              <select id="inputVendedor" class="form-select">
+                <option selected>Seleccione...</option>
+                <option>Efectivo</option>
+                <option>Cheque</option>
+                <option>Crédito</option>
+                <option>Transferencia bancaria</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="datetime" class="form-label">Fecha</label>             
+              <input size="16" type="text" class="form-control" id="datetime" readonly>
+            </div>
+
+
+           
+
+            
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous">
+    </script>
+    
+   
 </body>
+
 </html>
