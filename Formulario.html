@@ -7,15 +7,19 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a5635345f1.js" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="301669080835-f8tb1dim6kau53ldsi3qig4nffeis0ni.apps.googleusercontent.com"/>
 </head>
 <body>
     <form class="formulario">
         <!-- <h1>Registro</h1> -->
             <div class="contenedor">
-
+                
                 <div class="logo"> 
                 <img class= "foto 1" src="images/MODA T.png" width="270px" height="270px"> 
                 </div> 
+
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
                <div class="input-contenedor">
                 <i class="fas fa-user-alt icon"></i>
