@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a5635345f1.js" crossorigin="anonymous"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="301669080835-f8tb1dim6kau53ldsi3qig4nffeis0ni.apps.googleusercontent.com"/>
+   
 </head>
 <body>
     <form class="formulario">
@@ -21,21 +22,21 @@
 
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
-               <div class="input-contenedor">
+               <div class="usuario">
                 <i class="fas fa-user-alt icon"></i>
-                <input type="text" placeholder="Nombre Completo" required>
+                <input type="text" placeholder="Usuario"required id="nombre">
                </div>
                
-                <div class="input-contenedor">
+                <!-- <div class="correo">
                 <i class="fas fa-envelope icon"></i>
                 <input type="text" placeholder="Correo Electrónico" required>
-                </div>
+                </div> -->
 
-                <div class="input-contenedor">
+                <div class="password">
                 <i class="fas fa-key icon"></i>
-                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Contraseña" required id= "password">
                 </div> 
-                <input type="submit" value="Registrate" class= "button">
+                <input type="button" value="INGRESAR" onClick="mostrar()" class= "button">
                 <p>Al registrarse, Acepta terminos y condiciones de Uso, Política de privacidad. 
                     GRUPO T &#xAE;
                 </p>
@@ -48,4 +49,5 @@
     </form>
     
 </body>
+<script src="script.js"></script>
 </html>

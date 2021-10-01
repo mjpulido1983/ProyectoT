@@ -55,10 +55,19 @@ input[type="password"]{
      background-color: rgba(255, 255, 255, 0.938);
     
 }
-.input-contenedor{
+.usuario{
     margin-bottom: 10px;
     border: 2px solid rgba(211, 28, 28, 0); 
+ }
+.correo{
+    margin-bottom: 10px;
+    border: 2px solid rgba(211, 28, 28, 0);
 }
+.password{
+    margin-bottom: 10px;
+    border: 2px solid rgba(211, 28, 28, 0);
+}
+
 .icon{
     min-width: 30px;
     text-align: center;
@@ -99,7 +108,7 @@ p{
          margin-top: 50px;
          border-radius: 2%;
         
-
+        
 
     }
 }
