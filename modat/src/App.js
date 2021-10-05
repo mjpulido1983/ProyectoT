@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './CSSS/App.css';
-import foto1 from './images/MODAT.png'
+import foto1 from './images/MODAT.png';
 
 function App() {
   return (
