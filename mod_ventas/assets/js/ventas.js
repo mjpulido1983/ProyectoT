@@ -1,52 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+let template = `<div class="col-12 col-ms-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Moda T</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-  <link rel="shortcut icon" href="assets/img/favicon.png">
-</head>
-
-<body background="assets/img/back2.jpeg">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d1e0eb;">
-    <div class="container">
-      <a class="navbar-brand" href="buscar.html">
-        <img src="assets/img/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav me-auto mb-2 mb-lg-0">
-          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i> Usuarios</a>
-          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-people"></i> Clientes</a>
-          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-shop-window"></i> Productos</a>
-          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-file-earmark"></i> Facturas</a>
-        </div>
-
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="container">
-    <div class="mt-3">
-      <div class="row">
-        <nav class="navbar navbar-light" style="background-color: #d2e3f0;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <i class="bi bi-pen"></i> Editar Factura </a>
-          </div>
-        </nav>
-      </div>
-    </div>
     <div class="container">
       <div class="mt-2">
-        <div class="row">
+        
           <form class="row g-3">
             <div class="col-md-3">
               <label for="inputCedula" class="form-label">No. Documento</label>
@@ -92,7 +48,7 @@
                 <option>Crédito</option>
                 <option>Transferencia bancaria</option>
               </select>
-            </div>
+            </div> 
             <div class="col-md-2">
               <label for="inputVendedor" class="form-label">Estado</label>
               <select id="inputVendedor" class="form-select">
@@ -101,16 +57,15 @@
                 <option>Cancelada</option>
                 <option>Entregada</option>
               </select>
-            </div>
+            </div>         
           </form>
-        </div>
+        
       </div>
     </div>
-
-    <!-- Botones con Modal-->
     <div class="container">
-      <div class="mt-1">
-        <div class="row">
+      <div class="mt-3">
+      
+        
           <div class="row g-3">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal"
@@ -123,11 +78,8 @@
                 data-bs-target="#exampleModa3" data-bs-whatever="@getbootstrap"><i class="bi bi-shop-window"></i>
                 Agregar producto</button>
               <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal"
-                data-bs-target="#exampleModa4" data-bs-whatever="@mdo"><i class="bi bi-printer"></i> Imprimir
+                data-bs-target="#exampleModa4" data-bs-whatever="@mdo"><i class="bi bi-save"></i> Guaradar
                 factura</button>
-              <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal"
-                data-bs-target="#exampleModa5" data-bs-whatever="@mdo"><i class="bi bi-arrow-repeat"></i> Actualizar
-                datos</button>
               <div id="liveAlertPlaceholder"></div>
 
               <!--Modal agregar nuevo producto-->
@@ -299,66 +251,18 @@
             </div>
           </div>
         </div>
-      </div>
+        
     </div>
   </div>
+    
+    
+`;
+let grid = document.getElementById('naVentas');
+grid.innerHTML += template;
 
 
-
-  <div class="container">
-    <div class="mt-2">
-      <div class="row">
-        <div class="row g-3">
-          <div id="resultados" class="col-md-12" style="margin-top:10px">
-            <table class="table">
-              <tbody>
-                <tr class="table-secondary">
-                  <th class="text-center">CODIGO</th>
-                  <th class="text-center">CANT.</th>
-                  <th>DESCRIPCION</th>
-                  <th class="text-end">PRECIO UNIT.</th>
-                  <th class="text-end">PRECIO TOTAL</th>
-                  <th></th>
-                </tr>
-
-                <tr>
-                  <td class="text-center">MD-05</td>
-                  <td class="text-center">1</td>
-                  <td>Mouse USB</td>
-                  <td class="text-end">9.99</td>
-                  <td class="text-end">9.99</td>
-                  <td class="text-center"><a href="#" onclick="eliminar('1229')"><i class="bi bi-trash danger"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="text-end" colspan="4">SUBTOTAL $</td>
-                  <td class="text-end">0.00</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="text-end" colspan="4">IVA (19)% $</td>
-                  <td class="text-end">0.00</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="text-end" colspan="4">TOTAL $</td>
-                  <td class="text-end">0.00</td>
-                  <td></td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    
+    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-      </script>
-
-
-</body>
-
-</html>
