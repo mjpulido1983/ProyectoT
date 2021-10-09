@@ -80,7 +80,7 @@ function VentasPage() {
                     </form>
 
                 </div>
-            </div>
+            </div>                        
             <div className="container">
                 <div className="mt-3">
                     <div className="row g-3">
