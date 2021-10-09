@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import NavbarComponents from '../shared/components/navbar/NavbarComponents';
+import { Link } from 'react-router-dom';
 import './BuscarStyle.css';
 
 
@@ -14,14 +14,15 @@ function BuscarPage() {
                         <nav className="navbar navbar-light navbar-buscar">
                             <div className="col">
                                 <div className="container-fluid">
-                                    <a className="navbar-brand" href="#"><i className="bi bi-search"></i> Buscar factura
+                                    <a className="navbar-brand"><i className="bi bi-search"></i> Buscar factura
                                     </a>
                                 </div>
                             </div>
                             <div className="col">
-                                <div className="p-0 flex-grow-1 "><a href="ventas.html"
+                                <div className="p-0 flex-grow-1 "><Link to = "/ventas"
                                     className="btn btn-outline-secondary position-absolute top-0 end-0"><i className="bi bi-plus-circle"></i> Nueva Factura
-                                </a>
+                                </Link>
+                              
                                 </div>
                             </div>
                         </nav>
@@ -77,9 +78,9 @@ function BuscarPage() {
 
                                             <div className="d-flex justify-content-md-end">
                                                 <div className="btn-group" role="group" aria-label="Basic example">
-                                                    <a href="edventas.html" className="btn btn-warning" title="Editar factura"><i
-                                                        className="bi bi-pencil"></i></a>
-                                                    
+                                                    <Link to ="/modventas" className="btn btn-warning" title="Editar factura"><i
+                                                        className="bi bi-pencil"></i></Link>
+
                                                     <a href="#" className="btn btn-danger" title="Borrar factura" onclick="eliminar('327')"><i
                                                         className="bi bi-trash"></i> </a>
                                                 </div>

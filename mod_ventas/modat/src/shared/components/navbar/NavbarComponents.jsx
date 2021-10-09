@@ -17,9 +17,9 @@ function NavbarComponents() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav me-auto mb-2 mb-lg-0">
-            <Link to = "" className="nav-link active" aria-current="page" href="usuario.html"><i className="bi bi-person"></i> Usuarios</Link>
-            <Link to = "" className="nav-link active" aria-current="page" href="formulario.html"><i className="bi bi-people"></i> Vendedores</Link>
-            <Link to = "" className="nav-link active" aria-current="page" href="producto.html"><i className="bi bi-shop-window"></i> Productos</Link>
+            <Link to = "/buscar" className="nav-link active" aria-current="page" href="usuario.html"><i className="bi bi-person"></i> Usuarios</Link>
+            <Link to = "/modventas" className="nav-link active" aria-current="page" href="formulario.html"><i className="bi bi-people"></i> Vendedores</Link>
+            <Link to = "/ventas" className="nav-link active" aria-current="page" href="producto.html"><i className="bi bi-shop-window"></i> Productos</Link>
             <Link to = "" className="nav-link active" aria-current="page" href="lapaginavendedor.html"><i className="bi bi-file-earmark"></i> Ventas</Link>
           </div>
 
