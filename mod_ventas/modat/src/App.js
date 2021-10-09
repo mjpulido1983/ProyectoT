@@ -7,6 +7,7 @@ import NavbarComponents from './shared/components/navbar/NavbarComponents';
 import Footer from './shared/components/footer/Footer';
 
 
+
 function App() {
   return (
     <Router>

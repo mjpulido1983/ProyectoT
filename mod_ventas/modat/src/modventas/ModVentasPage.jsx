@@ -2,10 +2,12 @@ import React, {Fragment} from "react";
 import { Link } from "react-router-dom";
 import './ModVentasStyle.css';
 
+
 function ModVentas(){
 
     return(
         <Fragment>
+            
             <div className="container">
                 <div className="mt-3">
                     <div className="row">
@@ -17,6 +19,8 @@ function ModVentas(){
                     </div>
                 </div>
             </div>
+            
+            
 
             <div className="container">
                 <div className="mt-2">
