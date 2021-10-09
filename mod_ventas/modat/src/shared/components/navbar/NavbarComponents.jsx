@@ -8,7 +8,7 @@ function NavbarComponents() {
 
   return (
 
-    
+   
     <nav className="navbar navbar-expand-lg navbar-components">
       <div className="container">
         <a className="navbar-brand">
@@ -25,10 +25,13 @@ function NavbarComponents() {
             <Link to = "/ventas" className="nav-link active" aria-current="page" href="producto.html"><i className="bi bi-shop-window"></i> Productos</Link>
             <Link to = "" className="nav-link active" aria-current="page" href="lapaginavendedor.html"><i className="bi bi-file-earmark"></i> Ventas</Link>
           </div>
+          
 
         </div>
+        
       </div>
     </nav>
+    
     
 
 

@@ -8,6 +8,7 @@ function VentasPage() {
     return (
         <Fragment>
 
+        <div className="background">
             <div className="container">
                 <div className="mt-3">
                     <div className="row">
@@ -307,7 +308,7 @@ function VentasPage() {
                     </div>
                 </div>
             </div>
-
+        </div>
         </Fragment>
     )
 }

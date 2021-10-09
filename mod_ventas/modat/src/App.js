@@ -12,6 +12,7 @@ function App() {
   return (
     <Router>
       <NavbarComponents />
+      
       <Switch>
         <Route path="/ventas" exact>
           <VentasPage />
@@ -27,6 +28,7 @@ function App() {
           <ModVentasPage />
         </Route>
       </Switch>
+      
       <Footer />
     </Router>
 

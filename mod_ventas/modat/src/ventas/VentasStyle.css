@@ -13,3 +13,7 @@
 .navbar-ventas{
     background-color: #d2e3f0;
 }
+
+.background{
+    background-image: url('/src/assets/img/back2.jpeg')
+}
