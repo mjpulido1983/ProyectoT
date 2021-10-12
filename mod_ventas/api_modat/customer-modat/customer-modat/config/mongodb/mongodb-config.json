@@ -1,0 +1,8 @@
+{
+    "mongodb": {
+        "server": "cluster0.r1o4l.mongodb.net",
+        "database": "customer-modat",
+        "user": "customer_db_modat",
+        "password": "Customer"
+    }
+}
