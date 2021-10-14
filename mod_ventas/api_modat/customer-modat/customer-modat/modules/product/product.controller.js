@@ -5,38 +5,38 @@
     var router = express.Router();
 
 
-    var CustomerMiddleware = require('./customer.module')().CustomerMiddleware;
+    var ProductMiddleware = require('./product.module')().ProductMiddleware;
 
     router.post('/',
-        CustomerMiddleware.addCustomer,
-         function (req, res) {
+        ProductMiddleware.addProduct,
+        function (req, res) {
             res.status(201).json(req.response);
         });
 
     router.get('/',
-        CustomerMiddleware.getCustomers,
+        ProductMiddleware.getProducts,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
-    router.get('/:customerId',
-        CustomerMiddleware.getCustomerById,
+    router.get('/:productId',
+        ProductMiddleware.getProductById,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
-    router.put('/:customerId',
-        CustomerMiddleware.modifyCustomer,
+    router.put('/:productId',
+        ProductMiddleware.modifyProduct,
         function (req, res) {
             res.status(200).json(req.response);
         });
-    
-    router.delete('/:customerId',
-        CustomerMiddleware.removeCustomer,
+
+    router.delete('/:productId',
+        ProductMiddleware.removeProduct,
         function (req, res) {
             res.status(200).json(req.response);
         });
     module.exports = router;
 
-  
+
 })();
