@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    color: white;
+}
+div {
+    background-color: rgb(7, 7, 7);
+
+}
+
+.menu{
+    width: 200px;
+}
+
+.menu a{
+    background-color:green;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 12px;
+}
+
+.menu a:hover {
+    background-color: #ccc;
+}
+
+#izquierda{
+    background-color: rgb(0, 0, 10);
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+#derecha{
+    
+    background-color: rgb(0, 255, 55);
+    float: right;
+    width: 70%;
+    height: 100%;
+}
+
+.logo{
+    width: 180px;px;
+    align-items: center;
+}
+
+.factura{
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
