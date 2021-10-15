@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/formulario.css';
 import foto1 from '../media/MODAT.png';
 import back from '../media/backgroundlogin.png';
-import formulario from '../script/formulario.js';
+// import  from '../script/formulario.js';
 
 function Formulario() {
   return (
