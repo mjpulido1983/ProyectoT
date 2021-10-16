@@ -14,7 +14,7 @@
 
 
     function addProduct(req, res, next) {
-        const { code, name, description,price,state } = req.body;
+        const { code, name, description,price,stock } = req.body;
         try{
             if (!code || !name) {
                 throw new BadRequest('Missing required fields: code or name');
@@ -47,7 +47,7 @@
 
         function success(data) {
             req.response = data;
-            next();
+            next();            
         }
 
         function failure(err) {
