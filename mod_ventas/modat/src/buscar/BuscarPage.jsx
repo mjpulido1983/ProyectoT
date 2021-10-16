@@ -1,31 +1,63 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './BuscarStyle.css';
 import images from '../assets/images';
 
-
 function BuscarPage() {
 
+    const [products, setProducts] = useState([]);
+    const getProduct = async () => {
+        try {
+            const response = await fetch("http://localhost:3001/products");
+            const jsonResponse = await response.json();
+            const responseProducts = jsonResponse;   
+            console.log(jsonResponse)         
+            const listProducts = responseProducts.map((product) =>
+                <tr>
+                    <th scope="row">{product.code}</th>
+                    <td>{product.name}</td>
+                    <td>{product.descrption}</td>
+                    <td>{product.price}</td>
+                    <td>{product.state}</td>
+                    <td><span className="label label-success"></span></td>
+                    <td className="text-end"></td>
+                    <td className="text-end"></td>
+                </tr>
+                
+            );
+            
+            setProducts(listProducts)
+            
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
+    useEffect(() => {
+        getProduct();
+    }, []);
     return (
         <Fragment>
             <div className="background">
-                <div className="mt-3">
-                    <div className="row">
-                        <nav className="navbar navbar-light navbar-buscar">
-                            <div className="col">
-                                <div className="container-fluid">
-                                    <a className="navbar-brand"><i className="bi bi-search"></i> Buscar factura
-                                    </a>
+                <div className="container">
+                    <div className="mt-3">
+                        <div className="row">
+                            <nav className="navbar navbar-light navbar-buscar">
+                                <div className="col">
+                                    <div className="container-fluid">
+                                        <a className="navbar-brand"><i className="bi bi-search"></i> Buscar factura
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col">
-                                <div className="p-0 flex-grow-1 "><Link to="/ventas"
-                                    className="btn btn-outline-secondary position-absolute top-0 end-0"><i className="bi bi-plus-circle"></i> Nueva Factura
-                                </Link>
+                                <div className="col">
+                                    <div className="p-0 flex-grow-1 "><Link to="/ventas"
+                                        className="btn btn-outline-secondary position-absolute top-0 end-0"><i className="bi bi-plus-circle"></i> Nueva Factura
+                                    </Link>
 
+                                    </div>
                                 </div>
-                            </div>
-                        </nav>
+                            </nav>
+                        </div>
                     </div>
                 </div>
 
@@ -39,6 +71,7 @@ function BuscarPage() {
                                 <div className="col-md-6 control-label">
                                     <input className="form-control me-2" type="search"
                                         placeholder="Ingrese el nombre del cliente o el número de la factura" aria-label="Buscar" />
+
                                 </div>
                                 <div className="col-md-3">
                                     <button className="btn btn-outline-secondary" type="submit"><i className="bi bi-search"></i>Buscar</button>
@@ -53,29 +86,23 @@ function BuscarPage() {
                         <div className="outer_div">
                             <div className="table-responsive mt-2">
                                 <table className="table">
-                                    <tbody>
+                                    <thead>
                                         <tr className="navbar-buscar">
-                                            <th>#</th>
-                                            <th>Fecha</th>
-                                            <th>Cliente</th>
-                                            <th>Vendedor</th>
-                                            <th>Estado</th>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Fecha</th>
+                                            <th scope="col">Cliente</th>
+                                            <th scope="col">Vendedor</th>
+                                            <th scope="col">Estado</th>
                                             <th className="text-end">Total</th>
                                             <th className="text-end">Acciones</th>
 
                                         </tr>
+                                    </thead>
+                                    <tbody>
                                         <tr>
-                                            <td>327</td>
-                                            <td>02/10/2021</td>
                                             <td>
-                                                <a href="#" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                                                </a>
-                                            </td>
-                                            <td>Abelardo Cotes</td>
-                                            <td><span className="label label-success">Pagada</span></td>
-                                            <td className="text-end">19,631.48</td>
-                                            <td className="text-end">
-
+                                                {products}
+                                                
                                                 <div className="d-flex justify-content-md-end">
                                                     <div className="btn-group" role="group" aria-label="Basic example">
                                                         <Link to="/modventas" className="btn btn-warning" title="Editar factura"><i
@@ -107,12 +134,9 @@ function BuscarPage() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </Fragment >
+
+
     )
 }
 
