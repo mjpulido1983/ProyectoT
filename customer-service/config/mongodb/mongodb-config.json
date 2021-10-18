@@ -1,0 +1,12 @@
+{
+    "mongodb": {
+      "server": "cluster0.yy3ka.mongodb.net",
+      "database": "sellersproyectot-dev",
+      "user": "seller_dv_dev",
+      "password": "bMDYmCtQzPzoKQ9v"
+      
+    }
+}
+
+
+  
