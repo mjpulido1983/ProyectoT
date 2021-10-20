@@ -34,7 +34,7 @@ app.use(cookieParser());
 
 MongoDBUtil.init();
 app.use(cors());
-app.use('/customers', CustomerController);
+app.use('/vendedores', CustomerController);
 
 app.get('/', function (req, res) {
   var pkg = require(path.join(__dirname, 'package.json'));
