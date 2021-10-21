@@ -1,40 +1,27 @@
-import React from 'react';
-import Formulario from "./pages/Formulario";
-import Producto from  "./pages/Producto";
-import Usuario from "./pages/Usuario";
-import Vendedor  from "./pages/Vendedor";
-import Ventas  from "./pages/Ventas";
+// import './App.css';
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from "react-router-dom";
+import Login from './components/Login/Login';
+// import PaginaNoEncontrada from './components/PaginaNoEncontrada/PaginaNoEncontrada';
+import Register from './components/Register/Register';
+// import Reset from './components/Reset/Reset';
+// import User from './components/User/User';
 
-import  './styles/formulario.css'
-import  './styles/producto.css';
-import  './styles/usuario.css';
-import  './styles/vendedor.css';
-import  './styles/ventas.css';
-
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
-function App ()  {
+function App() {
   return (
-    <div className='App'>
-    <Router>
+    <BrowserRouter>
       <Switch>
-        <Route path="/" exact>
-            <Formulario/>
-            </Route>
-        <Route path="/producto">
-            <Producto/>
-            </Route>
-        <Route path="/usuario">
-          <Usuario/>
-        </Route>
-        <Route path="/vendedor">
-          <Vendedor/>
-          </Route>
-        <Route path="/ventas">
-        <Ventas/>
-        </Route>
+        <Route exact path="/" component={Login} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/users" component={User}/>
+        <Route component={PaginaNoEncontrada} />
       </Switch>
-  </Router>
-  </div> 
+    </BrowserRouter>
   );
 }
+
 export default App;
